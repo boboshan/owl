@@ -44,7 +44,8 @@ const Toc = ({ tableOfContents }) => {
     <animated.aside style={tocWidth}
         sx={{felxShrink: 15,
         zIndex: 9,
-        maxHeight: ['60vh', 'auto'],
+        height: 'fit-content',
+        maxHeight: ['60vh', 'fit-content'],
         position: ['fixed', 'sticky', 'sticky'], 
         top: [null, 5], 
         right: 25, 
@@ -54,6 +55,19 @@ const Toc = ({ tableOfContents }) => {
         border: '1px solid', 
         borderColor: 'muted',
         overflowY: 'auto',
+        '::-webkit-scrollbar': {
+          height: 6,
+          width: 6,
+        },
+        '::-webkit-scrollbar-track': {
+          background: theme => theme.colors.lessmuted, 
+        },
+        '::-webkit-scrollbar-thumb': {
+          background: theme => theme.colors.highlight, 
+          '&:hover': {
+            background: theme => theme.colors.primary, 
+          },
+        },
     }}>
      {children}
     </animated.aside>

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { jsx, Heading, Flex} from 'theme-ui'
 import { useSpring, animated } from 'react-spring'
 import range from 'lodash-es/range'
@@ -9,6 +9,8 @@ import SEO from '../components/seo'
 
 
 const IndexPage = () => {
+
+  
 
   const items = range(12)
   const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`
