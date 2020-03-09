@@ -75,6 +75,13 @@ module.exports = {
     },
     `gatsby-plugin-theme-ui`,
     `gatsby-theme-style-guide`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `orangered`,
+        showSpinner: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
