@@ -2,7 +2,7 @@ export default {
 // Config
 useColorSchemeMediaQuery: false,
   useCustomProperties: true,
-  initialColorMode: 'system',
+  initialColorMode: 'dark',
   colors: {
     text: '#eee',
     background: '#111',

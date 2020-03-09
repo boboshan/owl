@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React, { useState } from 'react'
 import {useTransition, useSpring, animated} from 'react-spring'
-import { jsx, Divider, Container, Badge, IconButton } from 'theme-ui'
+import { jsx, Divider, Container, IconButton } from 'theme-ui'
 
 const Toc = ({ tableOfContents }) => {
 
