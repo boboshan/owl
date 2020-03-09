@@ -83,7 +83,7 @@ const Layout = ({ children }) => {
       <GlobalStyle/>
       <Header/>
       <Nav />   
-      <Box as='main'sx={{mx:'auto', maxWidth: 1100, px: [10, 50, 50]}}>
+      <Box as='main'sx={{mx:'auto', maxWidth: 1100, px: [15, 50, 50]}}>
         {children}
       </Box>
       { !device.isMobile && <ToTop /> }

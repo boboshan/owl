@@ -8,7 +8,7 @@ const PostCard = ({ node }) =>{
   return(
   <Box 
       sx={{
-        p: [15, 4, 4], 
+        p: [20, 4, 4], 
         bg:'muted', 
         borderRadius: 4, 
         '&:hover': {

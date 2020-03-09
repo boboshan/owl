@@ -139,10 +139,12 @@ const Nav = ({Toc={isToc: null, tableOfContents: null}}) => {
         {menu &&  
           <Flex 
           sx={{flexDirection: 'column',
+            position: 'sticky',
+            top: '22vmin',
             zIndex: 10,
             mb: 4,
-            width: '100%', 
-            p:20,
+            width: '100%',
+            p: 20,
             bg:'background', 
           }}>
           {arrangeLinks(navLinks)}

@@ -43,7 +43,8 @@ const Toc = ({ tableOfContents }) => {
   const Aside = ({children}) =>(
     <animated.aside style={tocWidth}
         sx={{felxShrink: 15,
-        height: 'fit-content',
+        zIndex: 9,
+        maxHeight: ['60vh', 'auto'],
         position: ['fixed', 'sticky', 'sticky'], 
         top: [null, 5], 
         right: 25, 
@@ -52,6 +53,7 @@ const Toc = ({ tableOfContents }) => {
         bg: 'background',
         border: '1px solid', 
         borderColor: 'muted',
+        overflowY: 'auto',
     }}>
      {children}
     </animated.aside>
